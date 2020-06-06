@@ -6,9 +6,13 @@
 
 </head>
 <body>
-    <h1 id="titulo" >Seja Bem Vindo</h1>
+    <h1 onmouseover="console.log('Passou o mouse')" onmouseout="console.log('Tirou o mouse')" id="titulo" >Seja Bem Vindo</h1>
 
-    <input id="campo" type="text" name="usuario">
+    <label>
+        <input type="text" name="usuario">
+    </label>
+
+    <button onClick="clicou(this)" >Clique em mim</button>
 
     <script src="script.js"></script>
 </body>
