@@ -4,7 +4,7 @@ titulo.innerHTML = "Segundo Título";
 
 let campo = document.getElementById('campo');
 
-campo.placeholder = "Nome do usuário";
+// campo.placeholder = "Nome do usuário";
 
 
 function alterar() {
@@ -33,4 +33,17 @@ function clicou(botao) {
     document.getElementById('titulo').innerHTML = "Clicado"
     botao.innerHTML = 'Clicou'
     // alert("Você clicou no botão")
+}
+
+function digitou(e) {
+    // Tecla enter
+
+    if ( e.keyCode == 13 && e.ctrlKey == true) {
+        console.log('Control + Enter');
+    }
+
+    if( e.keyCode == 13 ) {
+        let text = document.getElementById('campo').value;
+        console.log(text);
+    }
 }

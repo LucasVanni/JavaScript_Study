@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" href="">
 </head>
 <body>
     <h1 onmouseover="console.log('Passou o mouse')" onmouseout="console.log('Tirou o mouse')" id="titulo" >Seja Bem Vindo</h1>
 
     <label>
-        <input type="text" name="usuario">
+        <input id="campo" onkeyup="digitou(event)" type="text" name="usuario">
     </label>
 
     <button onClick="clicou(this)" >Clique em mim</button>
